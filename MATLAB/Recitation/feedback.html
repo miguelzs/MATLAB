@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<style>
+html {
+    font-family: 'Open Sans';
+}
+.fa-check {
+    color: forestgreen;
+}
+.fa-times {
+    color: darkred;
+}
+.display-1 {
+    font-size: 2.5em;
+}
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-element {
+    margin-right: 30px;
+}
+.test-case {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.test-header {
+    margin-left: -50px;
+}
+.call {
+    font-family: "Courier New";
+}
+.variable-name {
+    font-family: "Courier New";
+}
+.variable-value {
+    font-family: "Courier New";
+}
+.problem div {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.exception {
+    color: darkred;
+    font-family: "Courier New";
+    margin-bottom: 0px;
+}
+.problem-row:hover {
+    cursor: pointer;
+}
+.table-responsive {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+h1 {
+    margin: 20px;
+}
+h3 {
+    font-size: 130%;
+}
+.warning {
+    color: #c94f00;
+}
+.feedback-points {
+    font-size: 110%;
+}
+.feedback {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5%;
+}
+pre {
+display:inline;
+}
+.diffnomatch {
+    background: #e5d5e8;
+}
+.right {
+    background: #dbf2fc;
+}
+.left {
+    background: #f3e9d1;
+}
+.diffsoft {
+    color: #888;
+}
+.diffskip {
+    color: #888;
+    background: #e0e0e0;
+}
+.bold {
+    font-weight:bold;
+}
+.problem-name {
+    font-family: 'Courier New', monospace;
+}
+.merged {
+    background-color: #eaeaea;
+}
+span {
+    font-family: "Courier New";
+}
+.diff-equal {
+    background-color: white;
+}
+.diff-delete {
+    background-color: #FF8A8A;
+    text-decoration: line-through;
+}
+.diff-insert {
+    background-color: lightgreen;
+}
+.diff-invisible {
+    color: white;
+}
+.diff-omitted {
+    color:#b5b5b5;
+}
+</style>
+<script>
+$(document).ready(function() {
+    $(".problem-row").on("click",function(){
+        window.location = $(this).data("href");
+        return false;
+    });
+});
+</script>
+</head>
+<body>
+<div class="container-fluid">
+<div class="row text-center">
+<div class="col-12">
+<h1 class="display-1">
+Feedback for Miguel Zadorosny Silva (msilva38)
+</h1>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-12">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<thead>
+<tr>
+<th>
+#
+</th>
+<th>
+Problem
+</th>
+<th>
+Points Earned (Plus Comments)
+</th>
+<th>
+Points Possible
+</th>
+</tr>
+</thead>
+<tr class="problem-row" data-href="#problem1">
+<td>
+<p>
+1
+</p>
+</td>
+<td>
+<p>
+mostAdmired
+</p>
+</td>
+<td>
+<p>
+20.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem2">
+<td>
+<p>
+2
+</p>
+</td>
+<td>
+<p>
+lovePropagation
+</p>
+</td>
+<td>
+<p>
+20.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem3">
+<td>
+<p>
+3
+</p>
+</td>
+<td>
+<p>
+flowerRun
+</p>
+</td>
+<td>
+<p>
+20.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem4">
+<td>
+<p>
+4
+</p>
+</td>
+<td>
+<p>
+loveLetter
+</p>
+</td>
+<td>
+<p>
+20.0 (+0.0)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr class="problem-row" data-href="#problem5">
+<td>
+<p>
+5
+</p>
+</td>
+<td>
+<p>
+badBreakup
+</p>
+</td>
+<td>
+<p>
+0.0 (+0.7)
+</p>
+</td>
+<td>
+<p>
+20.0
+</p>
+</td>
+</a>
+</tr>
+<tr>
+<td>
+</td>
+<td>
+<strong>Total</strong>
+</td>
+<td>
+<p>
+80.0 (+0.7)
+</p>
+</td>
+<td>
+<p>
+100.0
+</p>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem1" class="problem col-12">
+<h2 class="problem-name">
+mostAdmired
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework06/original/mostAdmired.mat" download="mostAdmired.mat">mostAdmired.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = mostAdmired(students4, letters4);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out2] = mostAdmired(students5, letters5);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out3] = mostAdmired(students6, letters6);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>8.0/8.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem2" class="problem col-12">
+<h2 class="problem-name">
+lovePropagation
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework06/original/lovePropagation.mat" download="lovePropagation.mat">lovePropagation.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[prop1] = lovePropagation(init4, lim4);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">prop1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[prop2] = lovePropagation(init5, lim5);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">prop2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[prop3] = lovePropagation(init6, lim6);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">prop3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>8.0/8.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem3" class="problem col-12">
+<h2 class="problem-name">
+flowerRun
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework06/original/flowerRun.mat" download="flowerRun.mat">flowerRun.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out1] = flowerRun(houses4, stores4);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out2] = flowerRun(houses5, stores5);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[out3] = flowerRun(houses6, stores6);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">out3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>8.0/8.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem4" class="problem col-12">
+<h2 class="problem-name">
+loveLetter
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework06/original/loveLetter.mat" download="loveLetter.mat">loveLetter.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[decrypted1] = loveLetter(encrypted4, pairs4);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">decrypted1: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[decrypted2] = loveLetter(encrypted5, pairs5);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">decrypted2: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>6.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-check"></i>
+ 
+[decrypted3] = loveLetter(encrypted6, pairs6);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><div><span class="variable-name">decrypted3: </span><span class="fas fa-check"></span></div></div><p class="feedback-points">Points earned for this test case: <b>8.0/8.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+<hr /><div class="row">
+<div id="problem5" class="problem col-12">
+<h2 class="problem-name">
+badBreakup
+</h2>
+<div class="supporting-files"><h3>Supporting Files</h3>
+<ul class="links">
+<li class="link"><a href="https://cs1371.gatech.edu/homework/homework06/original/badBreakup.mat" download="badBreakup.mat">badBreakup.mat</a></li>
+</ul>
+</div>
+<div class="tests">
+<h3 class="test-cases">Test Cases</h3>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[val1] = badBreakup(list4);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">MATLAB:badsubscript - Array indices must be positive integers or logical values.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[val2] = badBreakup(list5);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">MATLAB:badsubscript - Index exceeds the number of array elements (11).</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/6.0</b></p></div>
+</div>
+<div class="row test-case">
+<div class="row test-header">
+<div class="col-12">
+<div class="call">
+<i class="fas fa-times"></i>
+ 
+[val3] = badBreakup(list6);
+</div>
+</div>
+</div>
+<div class="container-fluid"><div class="feedback"><p class="exception">MATLAB:badsubscript - Array indices must be positive integers or logical values.</p></div><p class="feedback-points">Points earned for this test case: <b>0.0/8.0</b></p></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
