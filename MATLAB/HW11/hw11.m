@@ -9,9 +9,9 @@
 %
 % Failing to agree will result in a 0 for the entire assignment.
 %
-% Name: <Your Name Here>
-% GT Username (gburdell3): <Your GT Username Here>
-% Section: <Your Section Here>
+% Name: Miguel Zadorosny
+% GT Username (gburdell3): msilva38
+% Section: C
 %
 %% Banned Functions
 %
@@ -50,52 +50,59 @@
 %% breadDeadRedemption
 %
 %    load('breadDeadRedemption.mat');
-%
+% 
 %    [files1] = breadDeadRedemption(start1);
 %    [files1_soln] = breadDeadRedemption_soln(start1);
-%    check1 = isequal(files1, files1_soln);
-%
+%    check1 = isequal((files1), (files1_soln));
+% 
 %    [files2] = breadDeadRedemption(start2);
 %    [files2_soln] = breadDeadRedemption_soln(start2);
-%    check2 = isequal(files2, files2_soln);
-%
+%    check2 = isequal((files2), (files2_soln));
+% 
 %    [files3] = breadDeadRedemption(start3);
 %    [files3_soln] = breadDeadRedemption_soln(start3);
-%    check3 = isequal(files3, files3_soln);
-%
+%    check3 = isequal((files3), (files3_soln));
+
 %
 %% slapMyBread
-%
+% 
+%    clc
+%    clear
 %    load('slapMyBread.mat');
-%
+% 
 %    slapMyBread(slap1);
 %    slapMyBread_soln(slap1);
-%
-%
+%    check1 = isequal(readcell('slap1.xlsx'), readcell('slap1_solved.xlsx'));
+% 
+% 
 %    slapMyBread(slap2);
 %    slapMyBread_soln(slap2);
-%
-%
+%    check2 = isequal(readcell('slap2.xlsx'), readcell('slap2_solved.xlsx'));
+% 
+% 
 %    slapMyBread(slap3);
 %    slapMyBread_soln(slap3);
+%    check3 = isequal(readcell('slap3.xlsx'), readcell('slap3_solved.xlsx'));
 %
 %
 %
 %% getThisBread
 %
-%    load('getThisBread.mat');
-%
-%    [total1] = getThisBread(grocery1, inventory1);
-%    [total1_soln] = getThisBread_soln(grocery1, inventory1);
-%    check1 = isequal(total1, total1_soln);
-%
-%    [total2] = getThisBread(grocery2, inventory2);
-%    [total2_soln] = getThisBread_soln(grocery2, inventory2);
-%    check2 = isequal(total2, total2_soln);
-%
-%    [total3] = getThisBread(grocery3, inventory3);
-%    [total3_soln] = getThisBread_soln(grocery3, inventory3);
-%    check3 = isequal(total3, total3_soln);
+   clear
+   clc
+   load('getThisBread.mat');
+
+   [total1] = getThisBread(grocery1, inventory1);
+   [total1_soln] = getThisBread_soln(grocery1, inventory1);
+   check1 = isequal(total1, total1_soln);
+
+   [total2] = getThisBread(grocery2, inventory2);
+   [total2_soln] = getThisBread_soln(grocery2, inventory2);
+   check2 = isequal(total2, total2_soln);
+
+   [total3] = getThisBread(grocery3, inventory3);
+   [total3_soln] = getThisBread_soln(grocery3, inventory3);
+   check3 = isequal(total3, total3_soln);
 %
 %
 %% sliceAndDice

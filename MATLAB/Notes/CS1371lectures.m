@@ -643,5 +643,3 @@
 %   and first letter of the car
 
 
-
-
