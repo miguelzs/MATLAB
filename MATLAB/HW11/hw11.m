@@ -88,54 +88,57 @@
 %
 %% getThisBread
 %
-   clear
-   clc
-   load('getThisBread.mat');
-
-   [total1] = getThisBread(grocery1, inventory1);
-   [total1_soln] = getThisBread_soln(grocery1, inventory1);
-   check1 = isequal(total1, total1_soln);
-
-   [total2] = getThisBread(grocery2, inventory2);
-   [total2_soln] = getThisBread_soln(grocery2, inventory2);
-   check2 = isequal(total2, total2_soln);
-
-   [total3] = getThisBread(grocery3, inventory3);
-   [total3_soln] = getThisBread_soln(grocery3, inventory3);
-   check3 = isequal(total3, total3_soln);
+%    clear
+%    clc
+%    load('getThisBread.mat');
+% 
+%    [total1] = getThisBread(grocery1, inventory1);
+%    [total1_soln] = getThisBread_soln(grocery1, inventory1);
+%    check1 = isequal(total1, total1_soln);
+% 
+%    [total2] = getThisBread(grocery2, inventory2);
+%    [total2_soln] = getThisBread_soln(grocery2, inventory2);
+%    check2 = isequal(total2, total2_soln);
+% 
+%    [total3] = getThisBread(grocery3, inventory3);
+%    [total3_soln] = getThisBread_soln(grocery3, inventory3);
+%    check3 = isequal(total3, total3_soln);
 %
 %
 %% sliceAndDice
 %
+%    clear
+%    clc
 %    load('sliceAndDice.mat');
-%
+% 
 %    sliceAndDice(key1);
 %    sliceAndDice_soln(key1);
-%
-%
+%    check1 = isequal(readcell('alphabetInfo_soln.xlsx'), readcell('alphabetInfo.xlsx'));
+% 
+% 
 %    sliceAndDice(key2);
 %    sliceAndDice_soln(key2);
-%
-%
+%    check2 = isequal(readcell('breadInformation_soln.xlsx'), readcell('breadInformation.xlsx'));
+% 
 %    sliceAndDice(key3);
 %    sliceAndDice_soln(key3);
-%
-%
+%    check3 = isequal(readcell('bakeriesStuff_soln.xlsx'), readcell('bakeriesStuff.xlsx'));
 %
 %% breadStats
 %
+%    clear
+%    clc
 %    load('breadStats.mat');
-%
+% 
 %    breadStats(stats1, onsale1);
 %    breadStats_soln(stats1, onsale1);
-%
-%
+%    check1 = isequal(readcell('stats1_calculated_soln.xlsx'), readcell('stats1_calculated.xlsx'));
+% 
 %    breadStats(stats2, onsale2);
 %    breadStats_soln(stats2, onsale2);
-%
-%
+%    check2 = isequal(readcell('stats2_calculated_soln.xlsx'), readcell('stats2_calculated.xlsx'));
+% 
 %    breadStats(stats3, onsale3);
 %    breadStats_soln(stats3, onsale3);
-%
-%
+%    check3 = isequal(readcell('stats3_calculated_soln.xlsx'), readcell('stats3_calculated.xlsx'));
 %

@@ -607,8 +607,8 @@
 %   you give a file and cell array and matlab transfers the data to the
 %   file
 
-% helpful function: cell2mat removes the cells and creates a single nxm
-% array 
+% cell2mat()
+%   removes the cells and creates a single nxm array 
 %% Note: How to print cell arrays
 
 % newca = ca';
