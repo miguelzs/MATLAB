@@ -642,4 +642,18 @@
 %   manager wants to buy a car based on the first the player's first name
 %   and first letter of the car
 
+%% Lecture 33: Images HW
+
+% HW 1: to find mask2d of image. mask2d = 
+
+
+
+
+
+
+
+
+
+
+
 
