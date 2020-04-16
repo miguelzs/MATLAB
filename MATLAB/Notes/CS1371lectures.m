@@ -644,7 +644,29 @@
 
 %% Lecture 33: Images HW
 
-% HW 1: to find mask2d of image. mask2d = 
+% Basics
+
+% functions:
+
+% figure; //creates the window youre gonna put the images
+
+% img(<row>, <col>, <depth>); // put the coordinates for the pixel and give
+%   the depth corresponding to RGB (red green blue from 0 to 255)
+% the variable that os used for images is uint8() so whenever you created a
+% matrix of doubles and want to turn it into an image you have to to
+% uint8(<matrix>)
+
+% imread(<filename>, <type>);
+
+% imresize(<filename>, <[row, col]>);
+
+% HW11
+% use checkImage
+% turn .png files only
+% remove all imshow(), image()
+
+% HW 1: to find mask2d of image. 
+% mask2d = img_in(:, :, 1) == 0 & img_in(:, :, 2) == 0 & img(:, :, 3) == 0
 
 
 
