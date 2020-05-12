@@ -12,12 +12,12 @@ for i = 1:length(files)
 
        if (strfind(lower(files{i} ), 'chungus'))
 
-               [~, c, ~] = size(file{i});
+               [~, c, ~] = size(files{i});
 
-               newimg = imresize(file{i}, [rows, c]);
+               newimg = imresize(files{i}, [rows, c]);
 
                chung = [chung newimg];
-
+       end
 end
 
 out = rgb2gray( chung );
@@ -25,3 +25,5 @@ out = rgb2gray( chung );
 out3d = cat(3, out, out, out);
 
 imwrite('gottem.png', out3d);   
+
+end

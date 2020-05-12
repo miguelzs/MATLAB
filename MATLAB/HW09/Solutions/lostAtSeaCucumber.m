@@ -9,14 +9,12 @@ function [searched] = lostAtSeaCucumber(seaCucumberCrowd, searchingFor)
         searched = [searched seaCucumberCrowd(i).Name ' '];
         searchedindex = [searchedindex i];
         if (strcmp(seaCucumberCrowd(i).Name, searchingFor) == 1)
-            done = false;
             break;
         end
         for j = searchedindex
             if isequal(i, j)
                count = count + 1;
                if count == 2 
-                   done = false;
                    break;
                end
             end

@@ -668,7 +668,9 @@
 % HW 1: to find mask2d of image. 
 % mask2d = img_in(:, :, 1) == 0 & img_in(:, :, 2) == 0 & img(:, :, 3) == 0
 
+%% Numerical Methods/ Plotting
 
+% [total interpolated Ys] = interp1([Xs of original function], [Ys of original], [totalXs])
 
 
 

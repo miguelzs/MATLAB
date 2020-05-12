@@ -148,17 +148,17 @@
 %    clear 
 %    clc
 %    load('bacteriaCulture.mat');
-%
+% 
 %    [numCircles1] = bacteriaCulture(imName1, rVal1, gVal1, bVal1);
 %    [numCircles1_soln] = bacteriaCulture_soln(imName1, rVal1, gVal1, bVal1);
 %    check1 = isequal(numCircles1, numCircles1_soln);
-%
+% 
 %    [numCircles2] = bacteriaCulture(imName2, rVal2, gVal2, bVal2);
 %    [numCircles2_soln] = bacteriaCulture_soln(imName2, rVal2, gVal2, bVal2);
 %    check2 = isequal(numCircles2, numCircles2_soln);
-%
+% 
 %    [numCircles3] = bacteriaCulture(imName3, rVal3, gVal3, bVal3);
 %    [numCircles3_soln] = bacteriaCulture_soln(imName3, rVal3, gVal3, bVal3);
 %    check3 = isequal(numCircles3, numCircles3_soln);
-%
+% %
 %
