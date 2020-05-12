@@ -1,0 +1,20 @@
+File 1 has 1 additional line.
+File 1 line 2 matches File 2 line 1.
+File 1 line 3 matches File 2 line 2.
+File 1 line 4 matches File 2 line 3.
+File 2 has 2 additional lines.
+File 1 line 5 matches File 2 line 6.
+File 1 line 6 matches File 2 line 7.
+File 1 line 7 matches File 2 line 8.
+File 2 has 2 additional lines.
+File 1 line 8 matches File 2 line 11.
+File 1 has 4 additional lines.
+File 1 line 13 matches File 2 line 12.
+File 1 line 14 matches File 2 line 13.
+File 1 line 15 matches File 2 line 14.
+File 1 line 16 matches File 2 line 15.
+File 1 line 17 matches File 2 line 16.
+File 1 line 18 matches File 2 line 17.
+File 1 line 19 matches File 2 line 18.
+File 1 has 4 additional lines.
+File 1 line 24 matches File 2 line 19.
